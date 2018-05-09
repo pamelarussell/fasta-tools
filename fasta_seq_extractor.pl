@@ -5,7 +5,7 @@ use warnings;
 
 # Help message
 my $help_str = 	"\n-------------------------------------------------------------------------------------\n\n" .
-				"Fasta sequence extractor:\nExtract fasta sequences whose headers match a given pattern.\n\n" .
+				"Fasta sequence extractor:\nExtract full fasta sequences whose headers match a given pattern.\n\n" .
 				"Usage:\nfasta_seq_extractor.pl <fasta file> <pattern to match in fasta header> <outfile>\n\n" .
 				"Example:\nfasta_seq_extractor.pl gencode.fa TUG1-[0-9]+ tug1.fa" .
 				"\n-------------------------------------------------------------------------------------\n\n";
