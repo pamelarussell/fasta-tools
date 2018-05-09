@@ -93,18 +93,11 @@ sub extract_overlap {
 	my $seq_end = shift;
 	my $overlap_start = shift;
 	my $overlap_end = shift;
-	say "";
-	say $seq;
-	say $seq_begin;
-	say $seq_end;
-	say $overlap_start;
-	say $overlap_end;
 	
 	if($overlap_start < $seq_end && $overlap_end > $seq_begin) {
 		my $extract_start = max(0, $overlap_start - $seq_begin);
 		my $extract_end = min(length($seq), $overlap_end - $seq_begin);
 		my $extract_len = $extract_end - $extract_start;
-		say substr $seq, $extract_start, $extract_len;
 		return substr $seq, $extract_start, $extract_len;
 	}
 	else {return ""};
