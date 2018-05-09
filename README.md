@@ -1,8 +1,10 @@
 ## fasta-tools: Simple programs to manipulate fasta files
 
-#### General
+### For all programs:
 
 Run with `-h` for usage
+
+### Program descriptions:
 
 #### `fasta_seq_extractor.pl`
 
