@@ -14,3 +14,10 @@ Extract entire sequences whose names match a given regular expression
 
 Extract a given region from a given sequence in a fasta file
 
+#### `pairwise_align_bed_regions.py`
+
+Perform pairwise alignments between sequences extracted from a fasta file using BED records
+
+#### `pairwise_alignment.py`
+
+Perform a pairwise global alignment between two sequences in a fasta file
