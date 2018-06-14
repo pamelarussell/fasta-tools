@@ -39,8 +39,8 @@ def get_score(align):
     return align[2]
 
 # Align two sequences with biopython pairwise align
-def align(seq1, seq2):
-    return pairwise2.align.localms(seq1, seq2, 2, -1, -0.5, -0.1)
+def align(seq1, seq2, score_only = False):
+    return pairwise2.align.localms(seq1, seq2, 2, -1, -0.5, -0.1, score_only = score_only)
 
 # Align and pretty print
 def print_align(seq1, seq2, seq1_name, seq2_name):
@@ -49,7 +49,9 @@ def print_align(seq1, seq2, seq1_name, seq2_name):
     print("Seq 2: %s" % seq2_name)
     print("")
     aligns = align(seq1, seq2)
+    score = align(seq1, seq2, score_only = True)
     print(format_alignment(*aligns[0]))
+    print("#SUMMARY\t%s\t%s\t%s" % (seq1_name, seq2_name, score))
     print("")
 
 # Do the alignments
