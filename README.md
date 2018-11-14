@@ -8,7 +8,7 @@ Run with `-h` for usage
 
 #### `fasta_seq_extractor.pl`
 
-Extract entire sequences whose names match a given regular expression
+Extract entire sequences whose names match a regular expression and/or list of sequence headers
 
 #### `fasta_region_extractor.pl`
 
