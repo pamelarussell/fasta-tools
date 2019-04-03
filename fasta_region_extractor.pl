@@ -6,11 +6,22 @@ use feature 'say';
 use List::Util qw[min max];
 
 # Help message
-my $help_str = 	"\n-------------------------------------------------------------------------------------\n\n" .
-				"Fasta region extractor:\nExtract a region of a fasta sequence.\n\n" .
-				"Usage:\nfasta_region_extractor.pl <fasta file> <reference name> <0-based start> <0-based exclusive end> <outfile>\n\n" .
-				"Example:\nfasta_region_extractor.pl hg38.fa chr1 1000000 2000000 hg38_chr1_1000000_2000000.fa" .
-				"\n-------------------------------------------------------------------------------------\n\n";
+my $help_str = 	"
+-------------------------------------------------------------------------------------
+
+
+Fasta region extractor: Extract a region of a fasta sequence.
+				
+Usage:
+	fasta_region_extractor.pl <fasta file> <reference name> <0-based start> <0-based exclusive end> <outfile>
+					
+Example:
+	fasta_region_extractor.pl hg38.fa chr1 1000000 2000000 hg38_chr1_1000000_2000000.fa
+				
+				
+-------------------------------------------------------------------------------------
+				
+";
 
 # Get parameters from command line
 die_with_message("Incorrect number of arguments") if @ARGV != 5;
