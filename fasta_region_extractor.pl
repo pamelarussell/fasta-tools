@@ -71,7 +71,6 @@ while ($written_line_end < length($region_seq)) {
 }
 close $writer;
 close $reader;
-print("\n\nAll done!\n\n");
 
 
 
