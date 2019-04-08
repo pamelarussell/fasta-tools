@@ -6,6 +6,10 @@ Run with `-h` for usage
 
 ### Program descriptions:
 
+#### `fasta_seq_lens.sh`
+
+Get lengths of all sequences in a fasta file
+
 #### `fasta_seq_extractor.pl`
 
 Extract entire sequences whose names match a regular expression and/or list of sequence headers
