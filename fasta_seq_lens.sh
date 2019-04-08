@@ -1,8 +1,15 @@
 #!/bin/bash
 
+help_str="\n-----------------\nfastq_seq_lens.sh\n-----------------\n\nUsage: fasta_seq_lens.sh <fasta_file>\n"
+
 if [ "$#" -ne 1 ]; then
-    echo "Usage: fasta_seq_lens.sh <fasta_file>"
+    echo -e $help_str
     exit -1
+fi
+
+if [ "$1" == "-h" ]; then
+  echo -e $help_str
+  exit -1
 fi
 
 fasta=$1
