@@ -1,6 +1,6 @@
 #!/bin/bash
 
-help_str="\n-----------------\nfastq_seq_lens.sh\n-----------------\n\nUsage: fasta_seq_lens.sh <fasta_file>\n"
+help_str="\n-----------------\nfasta_seq_lens.sh\n-----------------\n\nUsage: fasta_seq_lens.sh <fasta_file>\n"
 
 if [ "$#" -ne 1 ]; then
     echo -e $help_str
