@@ -10,6 +10,10 @@ Run with `-h` for usage
 
 Get lengths of all sequences in a fasta file
 
+#### `fasta_single_line.sh`
+
+Convert fasta file to have each sequence on a single line (not including header)
+
 #### `fasta_seq_extractor.pl`
 
 Extract entire sequences whose names match a regular expression and/or list of sequence headers
